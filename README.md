@@ -1,7 +1,7 @@
 # gophyderm
-A PostgreSQL load balancer written in Go.
+A PostgreSQL load balancer / clustering tool written in Go.
 
-Pronounced "Go-fee-derm."
+Pronounced "Pak-Kee-Go"
 
 Future capabilites: replication, failover... more to come stay tuned
 
