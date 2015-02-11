@@ -1,4 +1,4 @@
-# gophyderm
+# pachygo
 A PostgreSQL load balancer / clustering tool written in Go.
 
 Pronounced "Pak-Kee-Go"
