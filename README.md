@@ -8,3 +8,12 @@ Future capabilites: replication, failover... more to come stay tuned
 This will have ssl connections by default.
 
 Notes and ideas will be kept in a google doc: https://docs.google.com/document/d/1Q0zh_GgvjsBKpsakTp-P44nwAvfYEe4XAfwBn6WtPiA/edit
+
+TODO:
+
+*** Learn how postgres does clustering,***
+Step 2: Have the app know the master,
+Step 3: Send the master "writes"
+Step 3B: Send the slaves "reads".
+
+How to do recovery through the filesystem.
