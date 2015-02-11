@@ -10,9 +10,13 @@ This will have ssl connections by default.
 Notes and ideas will be kept in a google doc: https://docs.google.com/document/d/1Q0zh_GgvjsBKpsakTp-P44nwAvfYEe4XAfwBn6WtPiA/edit
 
 ## TODO: ##
-### 
-*** Learn how postgres does clustering,*** ###
-*** Have the app know the master,
-* Send the master "writes"
-* Send the slaves "reads".
-* How to do recovery through the filesystem.**
+ 
+###*** Learn how postgres does clustering,*** ###
+
+*  Have the app detect the master
+* 
+*  Send the master "writes"
+* 
+*  Send the slaves "reads"
+* 
+*  How to do recovery through the filesystem.
