@@ -1,7 +1,7 @@
-# MONOGO #
+#GGRAMP #
 A PostgreSQL load balancer / clustering tool written in Go.
 
-Pronounced "Pak-Kee-Go"
+Pronounced "Gramp"
 
 Future capabilites: replication, failover... more to come stay tuned
 
