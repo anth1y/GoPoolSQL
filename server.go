@@ -5,14 +5,14 @@ import (
 	log "github.com/Sirupsen/logrus"
         "database/sql"
 	_ "github.com/lib/pq"
-	"net"
+        "time"
 )
 
 func main() {
         // create a statement string
         var sStmt string = "insert into test (gopher_id, created) values ($1, $2)"
-        //This is to open the db things a bit 
-	db, err := sql.Open("postgres",  "user=pachygo dbname=pachygo sslmode=disable")
+        //This is to open the db things a bit but will not open till first req. 
+	db, err := sql.Open("postgres",  "host=/var/run/postgresql dbname=testdb user=ant sslmode=disable")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -24,12 +24,16 @@ func main() {
 
        fmt.Printf("StartTime: %v\n", time.Now())
 
-       res, err := stmt.Exec(1, time.Now())
-	if err != nil {
-		log.Fatal(err)
-	}
-	// Write a single query to insert into a db.
-	//	server
-	// have all incoming requests listen on multiple channels
-	// then hand off to the postgres master
+//       res, err := stmt.Exec(1, time.Now())
+//	if err != nil {
+//		log.Fatal(err)
+//	}
+
+        // close statement
+        stmt.Close()
+        
+        // close db
+        db.Close()
+         
+       fmt.Printf("StopTime: %v\n", time.Now())
 }
