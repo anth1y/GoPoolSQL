@@ -1,7 +1,5 @@
-#GGRAMP #
-A PostgreSQL load balancer / clustering tool written in Go.
-
-Pronounced "Gramp"
+#GoPoolSQL #
+A PostgreSQL clustering tool written in Go.
 
 Future capabilites: replication, failover... more to come stay tuned
 
