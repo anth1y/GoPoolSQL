@@ -8,6 +8,8 @@ import (
 
 func lb() {
 	// Let's listen on tcp port 8149 on all interfaces
+	// Make a struct for each port interface 8149 5432 and structs for ReadOnly ReadWrite
+	// Lastly we will make channels and make them concurrent
 	l, err := net.Listen("tcp", ":8149")
 	if err != nil {
 		log.Fatal(err)
