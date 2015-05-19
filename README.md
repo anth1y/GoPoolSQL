@@ -1,4 +1,4 @@
-#GoPoolSQL #
+#PachyGo #
 A PostgreSQL clustering tool written in Go.
 
 Future capabilites: replication, failover... more to come stay tuned
